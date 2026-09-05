@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: behavioral-autoscaler
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: behavioral-autoscaler
+  template:
+    metadata:
+      labels:
+        app: behavioral-autoscaler
+    spec:
+      serviceAccountName: autoscaler-sa
+      containers:
+        - name: autoscaler
+          image: your-dockerhub-username/behavioral-autoscaler:latest
+          command: ["python", "pipeline/runner.py"]

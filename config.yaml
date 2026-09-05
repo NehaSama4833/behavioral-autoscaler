@@ -1,0 +1,20 @@
+scaler:
+  deployment_name: game-server
+  namespace: default
+  dry_run: false
+  interval_seconds: 10
+
+predictor:
+  seq_len: 20
+  weights_path: predictor/weights.pt
+
+thresholds:
+  high: 80
+  medium: 60
+  low: 40
+
+replicas:
+  high: 10
+  medium: 6
+  low: 3
+  min: 1
