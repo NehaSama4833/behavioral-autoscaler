@@ -42,4 +42,3 @@ Edit `config.yaml` to change thresholds, replica counts, target deployment, and 
 
 Part of ongoing research into **Behavior-Driven Autoscaling** — using application-layer signals as cloud infrastructure triggers.
 
-Target venues: IEEE CLOUD · ACM SoCC · MMSys
