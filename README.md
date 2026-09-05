@@ -42,3 +42,16 @@ Edit `config.yaml` to change thresholds, replica counts, target deployment, and 
 
 Part of ongoing research into **Behavior-Driven Autoscaling** — using application-layer signals as cloud infrastructure triggers.
 
+## Live Demo
+
+### Autoscaler running in DRY RUN mode
+![Dry Run](demo/Dry%20run.jpeg)
+
+### Live mode - pods scaling up on Kubernetes dashboard
+![Dashboard](demo/dashboard.jpeg)
+
+### All 6 pods running after spike detected
+![Pods](demo/dashbordd.jpeg)
+
+### Autoscaler output during live spike
+![Live Demo](demo/live%20demooo.jpeg)
